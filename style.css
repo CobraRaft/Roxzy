@@ -1,0 +1,115 @@
+html, body {
+    @import url('https://fonts.googleapis.com/css?family=Luckiest Guy')
+    margin: 0;
+    padding: 0;
+    font-family: 'Luckiest Guy';
+    background-color: #000000;
+    color: #ffffff;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+hr.solid {
+    border-top: 3px solid #000000;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+hr.break {
+    visibility: hidden;
+}
+hr.disabled {
+    visibility: hidden;
+}
+
+.header {
+    background-color: #e24fff;
+    padding: 5vh;
+    margin: 0;
+    text-align: left;
+    color: #000000;
+    font-size: 2vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+a.homebutton {
+    color: #000000;
+    padding-left: 10%;
+    transition: 0.3s;
+    font-size: 2.5vh;
+}
+
+a.homebutton:hover {
+    color: #ffffff;
+    font-size: 3vh;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.title {
+    font-size: 6vw; 
+    padding-top: 10vh;
+    margin: 0;
+    color: #eeaa11;
+    text-align: center;
+}
+
+.policy {
+    font-size: 2.5vh;
+    padding-top: 2vh;
+    margin: 0;
+    text-align: justify;
+    width: 70%;
+    transform: translateX(20%);
+    font-family:Arial, Helvetica, sans-serif;
+    -webkit-user-select: text;
+    -ms-user-select: initial;
+    user-select: text;
+}
+
+@media (orientation: portrait) or (max-width: 1230px) or (max-aspect-ratio: 3/4){
+    .description {
+        font-size: 3.5vh; 
+        padding-top: 1vh;
+        margin: 0;
+        text-align: center;
+        letter-spacing: 1px;
+        width: 70%;
+        transform: translateX(20%);
+    }
+    .title {
+        font-size: 10vh; 
+        padding-top: 5vh;
+        margin: 0;
+        color: #eeaa11;
+    }
+    .a {
+        padding-left: 0;
+        font-size: 10vh;
+    }
+    hr.solid {
+        visibility: hidden;
+        margin-bottom: 0.5vh;
+        margin-top: 0.5vh;
+    }
+    hr.break {
+        visibility: visible;
+        margin-bottom: 7vh;
+        margin-top: 5vh;
+    }
+    .policy {
+        font-size: 2.5vh;
+        text-align: center;
+    }
+    
+}
