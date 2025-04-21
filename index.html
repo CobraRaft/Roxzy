@@ -67,8 +67,9 @@ Roxzy is intended for users aged 13 or older. No data is knowingly collected fro
 <ul>Changes to the Privacy Policy</ul>
 <br><br>
 The Developer may update this Privacy Policy at any time. Continued use of Roxzy following updates indicates acceptance of the new terms. Users are encouraged to check this page regularly.
-            
-            <button class="agree-button">✅ I agree</button>
+<ul>Please accept The Privacy Policy.</ul>
+            <!-- BOUTON AVEC ANIMATION & ACTION -->
+<button class="agree-button" onclick="acceptPolicy()">✅ I agree</button>
 
 <style>
 .agree-button {
@@ -83,6 +84,7 @@ The Developer may update this Privacy Policy at any time. Continued use of Roxzy
   transition: transform 0.2s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 .agree-button::after {
@@ -108,6 +110,17 @@ The Developer may update this Privacy Policy at any time. Continued use of Roxzy
   transform: scale(0.95);
 }
 </style>
+
+<script>
+function acceptPolicy() {
+  const policy = document.querySelector('.policy');
+  policy.style.transition = 'opacity 0.4s ease';
+  policy.style.opacity = '0';
+  setTimeout(() => policy.style.display = 'none', 400);
+}
+</script>
+
+           
 
         </div>    
     </div>
