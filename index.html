@@ -26,7 +26,7 @@
     <div class="main">
         <h2 class="title">ROXZY PRIVACY POLICY</h2>
         <div class="policy">
-This Privacy Policy describes how Humzy ("Developer") collects, uses, and protects personal information obtained through the use of Roxzy ("Bot"). By using the Bot, you consent to the practices outlined in this Privacy Policy. If you do not agree to this Privacy Policy, please refrain from using Roxzy.
+    This Privacy Policy describes how Neporrex ("Developer") collects, uses, and protects personal information obtained through the use of Roxzy ("Bot"). By using the Bot, you consent to the practices outlined in this Privacy Policy. If you do not agree to this Privacy Policy, please refrain from using Roxzy.
 <br><br>
 <ul>Information Collection</ul>
 <br><br>
@@ -67,6 +67,48 @@ Roxzy is intended for users aged 13 or older. No data is knowingly collected fro
 <ul>Changes to the Privacy Policy</ul>
 <br><br>
 The Developer may update this Privacy Policy at any time. Continued use of Roxzy following updates indicates acceptance of the new terms. Users are encouraged to check this page regularly.
+            
+            <button class="agree-button">✅ I agree</button>
+
+<style>
+.agree-button {
+  background: linear-gradient(135deg, #00d26a, #00bfff);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 255, 153, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.agree-button::after {
+  content: '✨';
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.2; transform: translateY(-50%) scale(1); }
+  50% { opacity: 1; transform: translateY(-50%) scale(1.3); }
+}
+
+.agree-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 255, 153, 0.5);
+}
+
+.agree-button:active {
+  transform: scale(0.95);
+}
+</style>
+
         </div>    
     </div>
     <div class="footer"><footer></footer></div>
